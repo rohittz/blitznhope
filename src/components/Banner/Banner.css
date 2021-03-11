@@ -1,0 +1,49 @@
+.banner {
+    background-image: url("../../images/Football-field.jpg");
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    font-size: calc(1vw + 20px);
+    font-family: 'Righteous', cursive;
+    color: var(--main-txt-color);
+}
+
+.overlay {
+    height: 250px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+    letter-spacing: 5px;
+    z-index: 999;
+    transition: 0.4s all ease;
+    width: 100%;
+}
+
+.badgeImage {
+    width: 150px;
+    height: 150px;
+}
+
+.badgeImage img {
+    animation-name: beat;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-timing-function: cubic-bezier(.78, 0, .28, .99);
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1)
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}

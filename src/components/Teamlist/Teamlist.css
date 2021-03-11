@@ -1,0 +1,54 @@
+.teamlist {
+    margin-top: 50px;
+    row-gap: 30px;
+    padding: 50px 100px;
+    column-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .teamlist {
+        grid-template-columns: 80%;
+        padding: 50px 60px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .teamlist {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 50px 80px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .teamlist {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 50px 60px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .teamlist {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 50px 80px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .teamlist {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

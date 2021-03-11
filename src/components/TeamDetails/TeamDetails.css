@@ -1,0 +1,160 @@
+.team-details {
+    padding: 30px 60px;
+    padding-bottom: 20px;
+    background-color: #130f40;
+    animation-name: loading;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    background: linear-gradient(315deg, #130f40 0%, #000000 74%);
+}
+
+@keyframes loading {
+    0% {
+        transform: scale(0.3) translateY(200px);
+    }
+    100% {
+        transform: scale(1) translateY(0px);
+    }
+}
+
+.about-textSection, .about-team, .single-detail, .social-links {
+    display: flex;
+    align-items: center;
+}
+
+.social-links {
+    margin-top: 15px;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.social-icon {
+    font-size: 30px;
+    color: white;
+}
+
+.single-detail {
+    column-gap: 10px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.about-textSection {
+    justify-content: center;
+    row-gap: 7px;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+.about-team {
+    flex-flow: row nowrap;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.08);
+    justify-content: space-between;
+    border-radius: 20px;
+    column-gap: 30px;
+    row-gap: 15px;
+}
+
+.team-image {
+    width: calc(300px + 7vw);
+}
+
+.team-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.8), 3px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.team-description {
+    margin-top: 30px;
+    line-height: 1.5em;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .team-details {
+        padding: 20px 60px;
+    }
+    .about-team {
+        flex-flow: column;
+    }
+    .team-image {
+        width: auto;
+    }
+    .about-textSection {
+        order: 2;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .team-details {
+        padding: 20px 60px;
+    }
+    .about-team {
+        flex-flow: column;
+    }
+    .team-image {
+        width: auto;
+    }
+    .about-textSection {
+        order: 2;
+    }
+}
+
+hr {
+    margin-top: 40px;
+    opacity: 0.3;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .team-details {
+        padding: 20px 90px;
+    }
+    .about-team {
+        flex-flow: row;
+    }
+    .team-image {
+        width: calc(300px + 7vw);
+        order: 2;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .team-details {
+        padding: 20px 110px;
+    }
+    .about-team {
+        flex-flow: row;
+    }
+    .team-image {
+        width: calc(300px + 7vw);
+        order: 2;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .team-details {
+        padding: 20px 130px;
+    }
+    .about-team {
+        flex-flow: row;
+    }
+    .team-image {
+        width: calc(300px + 7vw);
+        order: 2;
+    }
+}
